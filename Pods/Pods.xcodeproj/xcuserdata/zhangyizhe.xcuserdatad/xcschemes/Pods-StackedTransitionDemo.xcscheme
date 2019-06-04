@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3317FF6A754D3949BC5480CDCAA75704"
-               BuildableName = "Pods_sandwichTransitionDemo.framework"
-               BlueprintName = "Pods-sandwichTransitionDemo"
+               BlueprintIdentifier = "3FE8CC746A53A039FBACB844E86D3FA4"
+               BuildableName = "Pods_StackedTransitionDemo.framework"
+               BlueprintName = "Pods-StackedTransitionDemo"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3317FF6A754D3949BC5480CDCAA75704"
-            BuildableName = "Pods_sandwichTransitionDemo.framework"
-            BlueprintName = "Pods-sandwichTransitionDemo"
+            BlueprintIdentifier = "3FE8CC746A53A039FBACB844E86D3FA4"
+            BuildableName = "Pods_StackedTransitionDemo.framework"
+            BlueprintName = "Pods-StackedTransitionDemo"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

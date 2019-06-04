@@ -2,10 +2,12 @@
 # platform :ios, '9.0'
 
 target 'StackedTransitionDemo' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  # Pods for StackedTransitionDemo
 
-  pod 'SnapKit', '~> 5.0.0'
+  # AutoLayout
+  pod 'SnapKit'
 
 end

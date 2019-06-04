@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_sandwichTransitionDemoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_sandwichTransitionDemoVersionString[];
+FOUNDATION_EXPORT double Pods_StackedTransitionDemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_StackedTransitionDemoVersionString[];
 

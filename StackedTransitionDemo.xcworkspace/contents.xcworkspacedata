@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/zhangyizhe/Documents/iosdevelop/sandwichTransitionDemo/StackedTransitionDemo.xcodeproj">
+      location = "group:StackedTransitionDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

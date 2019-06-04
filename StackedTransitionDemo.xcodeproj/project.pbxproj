@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5097F0068FC1BA814577285B /* Pods_StackedTransitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF7BF569D92343BC1A2C6F7 /* Pods_StackedTransitionDemo.framework */; };
 		62C0C25E22A10EED0070F9C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C0C25D22A10EED0070F9C5 /* AppDelegate.swift */; };
 		62C0C26022A10EED0070F9C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C0C25F22A10EED0070F9C5 /* ViewController.swift */; };
 		62C0C26322A10EED0070F9C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C0C26122A10EED0070F9C5 /* Main.storyboard */; };
@@ -16,13 +17,11 @@
 		62C0C27922A11C3B0070F9C5 /* HaveButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C0C27822A11C3B0070F9C5 /* HaveButtonView.swift */; };
 		62C0C27F22A4C2CD0070F9C5 /* Child.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C0C27E22A4C2CD0070F9C5 /* Child.storyboard */; };
 		62CD508B22A66C2A006168F7 /* StackedTransitionPresentAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CD508A22A66C2A006168F7 /* StackedTransitionPresentAnimation.swift */; };
-		ED05B383471065BCCF043A5E /* Pods_sandwichTransitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBCE0076BEC45E84E308ADB /* Pods_sandwichTransitionDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B3D629A77AAAF722FCE5D96 /* Pods-sandwichTransitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sandwichTransitionDemo.debug.xcconfig"; path = "Target Support Files/Pods-sandwichTransitionDemo/Pods-sandwichTransitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		2EBCE0076BEC45E84E308ADB /* Pods_sandwichTransitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sandwichTransitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62C0C25A22A10EED0070F9C5 /* sandwichTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sandwichTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C0C25A22A10EED0070F9C5 /* StackedTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackedTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C0C25D22A10EED0070F9C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62C0C25F22A10EED0070F9C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		62C0C26222A10EED0070F9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,7 +32,10 @@
 		62C0C27822A11C3B0070F9C5 /* HaveButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveButtonView.swift; sourceTree = "<group>"; };
 		62C0C27E22A4C2CD0070F9C5 /* Child.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Child.storyboard; sourceTree = "<group>"; };
 		62CD508A22A66C2A006168F7 /* StackedTransitionPresentAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedTransitionPresentAnimation.swift; sourceTree = "<group>"; };
+		6C3025E2086E54F090D67F94 /* Pods-StackedTransitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackedTransitionDemo.release.xcconfig"; path = "Target Support Files/Pods-StackedTransitionDemo/Pods-StackedTransitionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9CF7BF569D92343BC1A2C6F7 /* Pods_StackedTransitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackedTransitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4230F2893C26AE06C792A8C /* Pods-sandwichTransitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sandwichTransitionDemo.release.xcconfig"; path = "Target Support Files/Pods-sandwichTransitionDemo/Pods-sandwichTransitionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E35CE55CB6EEE64622E5EDF8 /* Pods-StackedTransitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackedTransitionDemo.debug.xcconfig"; path = "Target Support Files/Pods-StackedTransitionDemo/Pods-StackedTransitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED05B383471065BCCF043A5E /* Pods_sandwichTransitionDemo.framework in Frameworks */,
+				5097F0068FC1BA814577285B /* Pods_StackedTransitionDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +53,7 @@
 		5F766B312C60F6C8352684A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EBCE0076BEC45E84E308ADB /* Pods_sandwichTransitionDemo.framework */,
+				9CF7BF569D92343BC1A2C6F7 /* Pods_StackedTransitionDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -69,7 +71,7 @@
 		62C0C25B22A10EED0070F9C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				62C0C25A22A10EED0070F9C5 /* sandwichTransitionDemo.app */,
+				62C0C25A22A10EED0070F9C5 /* StackedTransitionDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +146,8 @@
 			children = (
 				1B3D629A77AAAF722FCE5D96 /* Pods-sandwichTransitionDemo.debug.xcconfig */,
 				A4230F2893C26AE06C792A8C /* Pods-sandwichTransitionDemo.release.xcconfig */,
+				E35CE55CB6EEE64622E5EDF8 /* Pods-StackedTransitionDemo.debug.xcconfig */,
+				6C3025E2086E54F090D67F94 /* Pods-StackedTransitionDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -151,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		62C0C25922A10EED0070F9C5 /* sandwichTransitionDemo */ = {
+		62C0C25922A10EED0070F9C5 /* StackedTransitionDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62C0C26C22A10EEE0070F9C5 /* Build configuration list for PBXNativeTarget "sandwichTransitionDemo" */;
+			buildConfigurationList = 62C0C26C22A10EEE0070F9C5 /* Build configuration list for PBXNativeTarget "StackedTransitionDemo" */;
 			buildPhases = (
 				D7ED002A6D79719A8107953D /* [CP] Check Pods Manifest.lock */,
 				62C0C25622A10EED0070F9C5 /* Sources */,
@@ -165,9 +169,9 @@
 			);
 			dependencies = (
 			);
-			name = sandwichTransitionDemo;
+			name = StackedTransitionDemo;
 			productName = sandwichTransitionDemo;
-			productReference = 62C0C25A22A10EED0070F9C5 /* sandwichTransitionDemo.app */;
+			productReference = 62C0C25A22A10EED0070F9C5 /* StackedTransitionDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +202,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				62C0C25922A10EED0070F9C5 /* sandwichTransitionDemo */,
+				62C0C25922A10EED0070F9C5 /* StackedTransitionDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -224,20 +228,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sandwichTransitionDemo/Pods-sandwichTransitionDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-StackedTransitionDemo/Pods-StackedTransitionDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-StackedTransitionDemo/Pods-StackedTransitionDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sandwichTransitionDemo/Pods-sandwichTransitionDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StackedTransitionDemo/Pods-StackedTransitionDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D7ED002A6D79719A8107953D /* [CP] Check Pods Manifest.lock */ = {
@@ -255,7 +254,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-sandwichTransitionDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StackedTransitionDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -417,7 +416,7 @@
 		};
 		62C0C26D22A10EEE0070F9C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B3D629A77AAAF722FCE5D96 /* Pods-sandwichTransitionDemo.debug.xcconfig */;
+			baseConfigurationReference = E35CE55CB6EEE64622E5EDF8 /* Pods-StackedTransitionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,7 +435,7 @@
 		};
 		62C0C26E22A10EEE0070F9C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4230F2893C26AE06C792A8C /* Pods-sandwichTransitionDemo.release.xcconfig */;
+			baseConfigurationReference = 6C3025E2086E54F090D67F94 /* Pods-StackedTransitionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,7 +464,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62C0C26C22A10EEE0070F9C5 /* Build configuration list for PBXNativeTarget "sandwichTransitionDemo" */ = {
+		62C0C26C22A10EEE0070F9C5 /* Build configuration list for PBXNativeTarget "StackedTransitionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62C0C26D22A10EEE0070F9C5 /* Debug */,
