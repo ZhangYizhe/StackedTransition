@@ -1,0 +1,6 @@
+framework module Pods_sandwichTransitionDemo {
+  umbrella header "Pods-sandwichTransitionDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
