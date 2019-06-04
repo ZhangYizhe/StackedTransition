@@ -2,4 +2,4 @@
 
 StackedTransitionDemo
 
-![Demo](https://github.com/ZhangYizhe/StackedTransition/blob/master/demo.gif)
+![DEMO](https://github.com/ZhangYizhe/StackedTransition/blob/master/demo.gif?raw=true)
