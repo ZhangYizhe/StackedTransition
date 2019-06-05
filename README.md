@@ -1,10 +1,27 @@
-# 堆栈式模态转场
-
-StackedTransitionDemo
+# 堆栈式模态转场 - StackedTransitionDemo
 
 ![DEMO](https://github.com/ZhangYizhe/StackedTransition/blob/master/demo.gif?raw=true)
 
 
+
+1、使用```UIViewControllerTransitioningDelegate```代理来控制视图控制器之间的动画。
+
+2、实现它的两个方法来控制动画
+
+```swift
+//MARK: - 转场动画控制
+func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        let present = StackedTransitionPresentAnimation()
+        return present
+}
+    
+func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        let present = StackedTransitionDismissedAnimation()
+        return present
+}
+```
+
+3、 新建类方法描述具体动画
 
 ```swift
 // MARK: - 堆栈式转场
@@ -83,8 +100,6 @@ class StackedTransitionDismissedAnimation:NSObject, UIViewControllerAnimatedTran
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         })
     }
-    
-    
 }
 
 ```

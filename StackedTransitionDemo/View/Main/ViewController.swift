@@ -31,13 +31,13 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
     //MARK: - 转场动画控制
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        let presentA = StackedTransitionPresentAnimation()
-        return presentA
+        let present = StackedTransitionPresentAnimation()
+        return present
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        let presentA = StackedTransitionDismissedAnimation()
-        return presentA
+        let present = StackedTransitionDismissedAnimation()
+        return present
     }
 
 }
