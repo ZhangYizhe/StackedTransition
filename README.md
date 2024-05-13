@@ -1,15 +1,15 @@
-# 堆栈式模态转场 - StackedTransitionDemo
+# Stacked modal transitions - StackedTransitionDemo
 
 ![DEMO](https://github.com/ZhangYizhe/StackedTransition/blob/master/demo.gif?raw=true)
 
 
 
-1、使用```UIViewControllerTransitioningDelegate```代理来控制视图控制器之间的动画。
+1、Use the UIViewControllerTransitioningDelegate delegate to control animations between view controllers.
 
-2、实现它的两个方法来控制动画
+2、Two ways to implement it to control animations
 
 ```swift
-//MARK: - 转场动画控制
+//MARK: - Transition animation control
 func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let present = StackedTransitionPresentAnimation()
         return present
@@ -21,12 +21,12 @@ func animationController(forDismissed dismissed: UIViewController) -> UIViewCont
 }
 ```
 
-3、 新建类方法描述具体动画
+3、 Create a new class method to describe specific animations
 
 ```swift
-// MARK: - 堆栈式转场
+// MARK: - stack transition
 
-/// 入场
+/// Admission
 class StackedTransitionPresentAnimation:NSObject, UIViewControllerAnimatedTransitioning, CAAnimationDelegate {
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.4
@@ -34,12 +34,12 @@ class StackedTransitionPresentAnimation:NSObject, UIViewControllerAnimatedTransi
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
-        // 修改过渡时的背景颜色
+        // Modify the background color during transition
         transitionContext.containerView.backgroundColor = UIColor.clear
         
-        // 得到子视图
+        // get subview
         let childViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!
-        // 得到父视图
+        // get parent view
         let parentViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!
         
         parentViewController.view.layer.masksToBounds = true
@@ -48,10 +48,10 @@ class StackedTransitionPresentAnimation:NSObject, UIViewControllerAnimatedTransi
         childViewController.view.layer.masksToBounds = true
         childViewController.view.layer.cornerRadius = 10
         
-        // 将子视图 放到父视图之上
+        // Place subview on top of parent view
         transitionContext.containerView.insertSubview(childViewController.view, aboveSubview: parentViewController.view)
         
-        // 设置子视图初始位置
+        // Set the initial position of the subview
         childViewController.view.transform = CGAffineTransform(translationX: 0, y: UIScreen.main.bounds.height)
         
         UIView.animate(withDuration: self.transitionDuration(using: transitionContext), animations: {
@@ -70,22 +70,22 @@ class StackedTransitionPresentAnimation:NSObject, UIViewControllerAnimatedTransi
 }
 
 
-/// 出场
+/// appear
 class StackedTransitionDismissedAnimation:NSObject, UIViewControllerAnimatedTransitioning, CAAnimationDelegate {
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.4
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        // 修改过渡时的背景颜色
+        // Modify the background color during transition
         transitionContext.containerView.backgroundColor = UIColor.clear
         
-        // 得到父视图
+        // get parent view
         let parentViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!
-        // 得到子视图
+        // get subview
         let childViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!
         
-        // 将toViewController.view 放到fromViewController.view之上
+        // Place toViewController.view above fromViewController.view
         transitionContext.containerView.insertSubview(childViewController.view, aboveSubview: parentViewController.view)
         
         UIView.animate(withDuration: self.transitionDuration(using: transitionContext), animations: {
@@ -96,7 +96,7 @@ class StackedTransitionDismissedAnimation:NSObject, UIViewControllerAnimatedTran
             
         }, completion: { (completion) in
             
-            // 转场完成后 transitionWasCancelled
+            // After the transition is completed transitionWasCancelled
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         })
     }
